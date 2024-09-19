@@ -29,6 +29,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '.onrender.com']
 
+PORT = os.getenv('PORT', '8000')  # Default to 8000 if PORT is not set
+
 
 
 # Application definition
