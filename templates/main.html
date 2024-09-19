@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+     {% comment %} <meta http-equiv="refresh" content="5"> {% endcomment %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+    <title>Devtopia - An utopia for developers!</title>
+  </head>
+
+  <body>
+
+    {% include "navbar.html" %}
+
+    {% if messages %}
+    <ul class="messages">
+    {% for message in messages %}
+        <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% block content %}
+    
+    {% endblock %}
+
+    <footer class="footer">
+      <div class="container">
+          <p>Created by Aditya Pratap Singh</p>
+          <div class="social-links">
+              <a href="https://www.linkedin.com/in/aditya-pratap-singh-8b901a273" target="_blank" aria-label="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M4.98 3.5c0 1.381-1.115 2.5-2.49 2.5s-2.49-1.119-2.49-2.5c0-1.381 1.115-2.5 2.49-2.5s2.49 1.119 2.49 2.5zm-.02 4.5h-5v16h5v-16zm7.982 0h-4.98v16h4.98v-8.604c0-4.69 6.018-5.068 6.018 0v8.604h4.98v-10.428c0-8.301-9.674-8.033-11.998-3.917v-2.659z"/>
+                  </svg>
+              </a>
+              <a href="https://github.com/AdityaPSingh7" target="_blank" aria-label="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 .296c-6.628 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.111.82-.258.82-.577 0-.285-.01-1.04-.016-2.04-3.338.724-4.042-1.416-4.042-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.085 1.838 1.236 1.838 1.236 1.07 1.833 2.809 1.304 3.495.997.108-.775.419-1.304.762-1.605-2.665-.305-5.466-1.335-5.466-5.931 0-1.31.469-2.381 1.235-3.221-.123-.305-.536-1.534.117-3.195 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.398 3.003-.404 1.02.006 2.046.138 3.004.404 2.291-1.552 3.298-1.23 3.298-1.23.654 1.661.241 2.89.118 3.195.767.84 1.234 1.911 1.234 3.221 0 4.609-2.803 5.624-5.475 5.921.43.371.814 1.102.814 2.221 0 1.604-.015 2.897-.015 3.293 0 .322.218.694.826.576 4.763-1.586 8.197-6.082 8.197-11.384 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+              </a>
+          </div>
+      </div>
+  </footer>
+  
+    
+
+   <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
+
+
+
+
+

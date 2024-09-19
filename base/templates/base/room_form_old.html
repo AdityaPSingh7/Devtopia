@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+
+{% block content %}
+<div>
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{form.as_p}}
+        {% comment %} This one above displays form with a bit of standard styling, basically make the fields vertical {% endcomment %}
+        {% comment %} {{form}} (this is to display form) {% endcomment %}
+        <input type="submit" value="Submit"/>
+    </form> 
+</div>
+{% endblock %}
