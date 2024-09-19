@@ -140,7 +140,9 @@ STATICFILES_DIRS = [
 ] 
 
 MEDIA_ROOT = BASE_DIR / 'static/images'
-# 'DIRS': [os.path.join(BASE_DIR, 'base', 'templates')],
+'DIRS': [os.path.join(BASE_DIR, 'base', 'templates')],
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 # STATIC_ROOT = 
 
