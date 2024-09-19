@@ -1163,8 +1163,35 @@ a {
   color: var(--color-main);
   font-weight: 1.4rem;
 }
-
 .footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: var(--color-gray);
+  background: var(--color-dark);
+  z-index: 0; /* Setting z-index to 0 to avoid being behind other elements */
+  height: 80px;
+}
+
+.footer .social-links a {
+  margin: 0 10px;
+  color: #ffffff; /* Set to white to match the dark background */
+  text-decoration: none;
+}
+
+.footer .social-links a:hover {
+  color: #f1f1f1; /* Adding a hover effect for better UX */
+}
+
+.footer .social-links svg {
+  vertical-align: middle;
+}
+
+
+/* .footer {
   text-align: center;
   padding: 20px;
   background-color: #f1f1f1;
@@ -1190,4 +1217,4 @@ a {
 
 .footer .social-links svg {
   vertical-align: middle;
-}
+} */
