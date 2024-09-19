@@ -69,6 +69,10 @@ MIDDLEWARE = [
 
 
 ]
+CSRF_TRUSTED_ORIGINS = [
+    'https://devtopia.onrender.com',
+]
+
 ROOT_URLCONF = 'Devtopia.urls'
 
 TEMPLATES = [
